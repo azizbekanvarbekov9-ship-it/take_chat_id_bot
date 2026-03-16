@@ -1,0 +1,12 @@
+[Unit]
+Description=calback_data_click_bot
+After=network.target
+
+[Service]
+User=root
+WorkingDirectory=/root/apps/bots/calback_data_click_bot
+ExecStart=/root/apps/bots/calback_data_click_bot/venv/bin/python /root/apps/bots/calback_data_click_bot/main.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
